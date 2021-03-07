@@ -43,4 +43,3 @@ This page will contain info about the team members and their  pictures.
 > Git process 
 
 Odai will create the Organization and the repo, the conflict will be resolved by all group members and the pull request  will be done every morning before starting.
-
