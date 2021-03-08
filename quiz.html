@@ -3,7 +3,7 @@
 
   <head>
     <title>Home</title>
- 
+    <link rel="icon" href="./assets/logoY.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -14,8 +14,9 @@
 
   <body>
 
-    <header >
-      <div ><img src=""/></div>
+    <header class="vanBar">
+      <div class="vanBar__logo"><img src="./assets/logoY.png"/></div>
+      <!-- <div class="vanBar__logo"><img src="https://www.clipartmax.com/png/middle/66-660611_%5Bres%5D-purple-flowers-png-by-hanabell1-plants-with-flowers-png.png"/></div> -->
       
        
 
@@ -32,57 +33,35 @@
         </ul>
       </nav>
 
-      <div ><a href="./cart.html"><sub>(1)</sub><img src="" alt=""></a></div>
+      <div class="navBar__cart"><a href="./cart.html"><sub id="counter">(1)</sub><img src="./assets/cart.png" alt=""></a></div>
     </header>
 
     <main class="content">
-      <div class="header">
-        <h2>Text your Kolage</h2>
-      </div>
-<div class="images">
-  <img src="" />
-</div>
-   
-<div >
-  <form action="">
-   
-    <input type="radio" id="A1" name="A" value="">
-    <label for="A1">is this</label><br>
-    <input type="radio" id="A2" name="A" value="">
-    <label for="A2">thst is ?</label><br>
-    <input type="radio" id="A3" name="A" value="">
-    <label for="A3">yes or no?</label><br>
-    <input type="radio" id="A4" name="A" value="">
-    <label for="A4">I will</label><br>
-  
-    <input type="submit" value="Submit">
-  </form>
-</div>
-   
+     
 
     </main>
 
-    <footer >
-      <div >
+    <footer class="footer">
+      <div class="footer__location">
         <p>
-        <i ></i>
+        <i class="fas fa-map-marked-alt"></i>
         </p>
         <p>AsAc For programing, str 5th</p>
       </div>
 
-      <div >
-        <img src=""/>
+      <div class="footer__logo">
+        <img src="./assets/logoY.png"/>
       </div>
-      <div >
-        <p><i ></i></p>
+      <div class="footer__phone">
+        <p><i class="fas fa-mobile-alt"></i></p>
         
-        <p></p>
+        <p>+96278665544</p>
       </div>
 
-      <div class="">
-        <div>  <i class=""></i>
-          <i ></i>
-          <i></i></div>
+      <div class="footer__soicaile">
+        <div>  <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i></div>
       
           <p>&copy;2021 ASAC 201d17</p>
        </div>
@@ -90,6 +69,7 @@
     </footer>
 
     <script src='js/app.js'></script>  
+    <script src='js/quiz.js'></script>  
   </body>
 
 </html>
