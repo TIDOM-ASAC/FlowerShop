@@ -43,6 +43,7 @@ This page will contain info about the team members and their  pictures.
 > Git process 
 
 Odai will create the Organization and the repo, the conflict will be resolved by all group members and the pull request  will be done every morning before starting.
+
 # User story :
 * As a user I want to see a collection of products images.
 * As a user I want to be able to add and remove products from my cart.
@@ -52,3 +53,4 @@ Odai will create the Organization and the repo, the conflict will be resolved by
 
 # Domain modeling:
 ![](/model.jpeg)
+
