@@ -3,7 +3,7 @@
 
   <head>
     <title>Home</title>
-    
+    <link rel="icon" href="./assets/logoY.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -14,15 +14,9 @@
 
   <body>
 
-    <header >
-      <div ><img /></div>
-      
-      
-       
-
-    
-
-      <nav >
+    <header class="vanBar">
+      <div class="vanBar__logo"><img src="./assets/logoY.png"/></div>
+           <nav class="vanBar__menu">
 
         <ul>
           <li><a href="./index.html">Home</a></li>         
@@ -32,86 +26,44 @@
         </ul>
       </nav>
 
-      <div ><a href="#"><sub>(1)</sub><img src="" alt=""></a></div>
+      <div class="navBar__cart"><a href="#"><sub id="counter">(1)</sub><img src="./assets/cart.png" alt=""></a></div>
     </header>
 
-    <main >
+    <main class="content">
 
-   <table>
-     <thead>
-       <tr>
-         <th>Image</th>
-         <th>Price</th>
-         <th>Quintity</th>
-         <th>Total</th>
-         <th>Remove</th>
-       </tr>
-     </thead>
-     <tbody>
-       <tr>
-         <td><img src=''/></td>
-       
-         <td>$33</td>
-         <td>2</td>
-         <td>$66</td>
-         <td><a href="#1">Delete</a></td>
-        
-       </tr>
-
-       <tr>
-        <td><img src=''/></td>
-     
-        <td>$33</td>
-        <td>2</td>
-        <td>$66</td>
-        <td><a href="#1">Delete</a></td>
-       
-      </tr>
-
-
-      <tr>
-        <td><img src=''/></td>
-    
-        <td>$33</td>
-        <td>2</td>
-        <td>$66</td>
-        <td><a href="#1">Delete</a></td>
-       
-      </tr>
-     </tbody>
-
-   </table>
+   
 
     </main>
 
-    <footer >
-      <div >
+    <footer class="footer">
+      <div class="footer__location">
         <p>
-        <i ></i>
+        <i class="fas fa-map-marked-alt"></i>
         </p>
         <p>AsAc For programing, str 5th</p>
       </div>
 
-      <div >
-        <img src=""/>
+      <div class="footer__logo">
+        <img src="./assets/logoY.png"/>
       </div>
-      <div >
-        <p><i ></i></p>
+      <div class="footer__phone">
+        <p><i class="fas fa-mobile-alt"></i></p>
         
         <p>+96278665544</p>
       </div>
 
-      <div >
-        <div>  <i ></i>
-          <i ></i>
-          <i ></i></div>
+      <div class="footer__soicaile">
+        <div>  <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i></div>
       
           <p>&copy;2021 ASAC 201d17</p>
        </div>
     
     </footer>
 
-    <script src=''></script>  
+    <script src='js/app.js'></script>  
+    <script src='js/cart.js'></script>  
   </body>
 
 </html>
