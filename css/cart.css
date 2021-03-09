@@ -1,6 +1,6 @@
 .navBar__cart a sub
 {
-    color:rgb(255, 255, 255) !important;
+    color:  #90003b !important;
     
     
 }
@@ -10,40 +10,43 @@
 {
     grid-area: main;
     display: grid;
-    /* grid-template-columns: repeat(2,1fr); */
-    grid-template-rows: repeat(1,63.1vh);
+      min-height: 60vh;
 padding: 44px;
-    justify-items: center;
-    background-image: linear-gradient( 
-        105deg
-         , white, #df98b5);
-   
-
-    
+    justify-items: center;    
 }
 
 table img{
     
     width: 44%;
 }
+
+tbody tr{
+border-bottom:1px solid #85a4c5;
+height: 130px;
+
+}
+thead tr{
+    font-size: 1.5rem;
+    border-bottom: 5px solid #85a4c5;
+}
 th,td{
     width:5%;
     text-align: center;
     vertical-align: middle;
+    padding: 5px;
 }
 table{
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 30px;
 }
 
 table a{
     text-decoration: none;
     border-radius: 60px;
-    /* border: 2px solid transparent; */
     border: 0;
     background-color: #850b0bd4;
     color: white;
-    padding: 8px;
+    padding: 8px 22px;
     box-shadow: 0px 0px 19px 2px #96262a;
   
    
