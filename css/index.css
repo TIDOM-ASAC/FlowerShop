@@ -1,0 +1,287 @@
+
+.vanBar__menu ul li:nth-child(1) a
+{ 
+  
+    
+    color:  #90003b;
+    transform: scale(1.2);
+}
+ .content
+ {
+     grid-area: main;
+     display: grid;
+     grid-template-rows: 76vh 123vh 51vh;
+     grid-template-columns: 1fr;
+     grid-template-areas: 'video'
+                         
+                          'card';                      
+ }
+ 
+ 
+ .content__videos 
+ {
+ 
+
+     grid-area:video ;
+     height:76vh;
+     position:relative;
+   z-index: 33;
+    
+    
+ }
+ .content__videos .videos_imges
+ {
+ 
+     background-size: cover;
+     background-position: center;
+     height: 76vh;
+     width: 100%;
+     position: absolute;
+     object-fit:cover;
+     left:0;
+ }
+
+ 
+ .content__powerFower
+ {
+     grid-area:power ;
+ }
+ 
+ .content__cardShow
+ {
+     grid-area:card ; 
+     align-items: center;
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: column;
+     padding: 47px;
+     opacity: 1;
+     transition:opacity 2s ;
+
+
+     box-shadow: none;
+ }
+ 
+   @keyframes cf4FadeInOut {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+   }   
+  
+   
+   .content__videos video {  
+     animation-name: cf4FadeInOut;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 30s;
+   }
+   .content__videos video:nth-of-type(1) {
+  
+     animation-delay: 24s;
+   }
+   .content__videos video:nth-of-type(2) {
+
+     animation-delay: 18s;
+   }
+   .content__videos video:nth-of-type(3) {
+   
+     animation-delay: 10s;
+   }
+   .content__videos video:nth-of-type(4) {
+   
+     animation-delay: 0;
+   }
+
+   .videos_text{    
+    top: 13%;
+    left: 24%;  
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #df98b5;
+    font-size: 3rem;
+
+   }
+
+  .otherside
+  {    
+    top: 81%;
+    left: 24%;
+  }
+
+
+   @keyframes para {
+    0% {
+      opacity:0;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:1;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
+   }   
+
+   .content__videos p {  
+    animation-name: para;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-fill-mode: backwards;
+    
+  }
+
+   .videos_text:nth-of-type(1) {
+
+     animation-delay: 0s;
+     
+   }
+    .videos_text:nth-of-type(2) {
+   
+     animation-delay: 10s;
+   } 
+  
+
+   .content__powerFower
+   {
+    grid-area: power;
+    position: relative;
+   }
+   .content__powerFower img
+   {
+    width: 100%;
+   height: 60vh;
+   }
+   .content__powerFower p
+   {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 40%;
+    font-size: 3rem;
+    color: #3d0f59;
+    line-height: 1.4;
+   }
+   .content__powerFower span
+   {
+    background-image: linear-gradient(to bottom,white,transparent),url('../assets/power3.jpg');
+   height: 60vh;
+   width: 100%;
+   display: block;
+   } 
+
+
+ label, input,textarea{
+  
+   font-weight: bolder;
+   font-size: 1.1rem;
+    font-weight: bolder;
+    border-radius: 17px;
+    border: 0;
+    outline: 0;
+    padding: 7px;
+    margin: 5px;
+    
+ }
+
+ input[type='submit']
+ {
+  background-image: linear-gradient( to right, #40115b,#de97b4);
+  box-shadow: 0px 6px 11px 0px #3d0e59;
+  color: white;
+  transition: box-shadow 2s;
+ }
+ input[type='submit']:hover
+ {
+  
+
+  box-shadow: 0px 13px 26px 0px #3d0e59;
+  
+ }
+ label
+ {
+
+   color: #3d0e59;
+ }
+
+
+
+ input, textarea
+ {
+  background-color: #fadcda;
+ }
+
+ .content__cardShow div div img {
+  width: 249px;
+  height: 267px;
+ }
+ .content__cardShow .content_best  {
+
+
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 400px;
+
+
+ }
+ .content__cardShow .content_best  div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .content__cardShow .content_best  div  span{
+  padding: 23px;
+  font-size: 23px;
+  color: #960d45;
+ }
+
+ h3{
+  font-size: 4.2rem;
+ }
+
+ .content_best div{
+  
+  padding: 12px 0;
+  box-shadow: 0px 1px 17px 5px grey;
+  border-radius: 22px;
+  margin: 2%;
+ }
+
+ .motivate {
+  display: flex;
+    align-items: center;
+    line-height: 2;
+    font-size: 18px;
+    padding: 15px;
+    column-count: 2;
+    column-gap: 25px;
+    box-shadow: none;
+ }
+ .motivate div span {
+  color: #90003b;
+  font-size: 25px;
+ }
+ .motivate div:not(span) {
+  font-size: 20px;
+ }

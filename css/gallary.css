@@ -2,23 +2,14 @@
 { 
   
     
-    color:rgb(255, 255, 255);
+   color:  #90003b;
     transform: scale(1.2);
 }
  .content
  {
      grid-area: main;
      display: grid;
-     /* grid-template-rows: 10vh 62.1vh; */
      grid-template-columns: repeat(2,1fr);
-     /* grid-template-areas: 'header header'
-     'img question'; */
-     /* justify-items: center;   
-     align-items: center;    */
-     background-image: linear-gradient(
-        105deg
-        , white, #df98b5);  
-                        /* background-image: linear-gradient(to bottom,#eaeaea  ,transparent),url('https://wallpaper.dog/large/10731468.jpg'); */
  }
 
  section
@@ -27,15 +18,13 @@
      transition:  box-shadow 2s ease-out 100ms;    
      overflow: hidden;
      margin: 5rem;     
-     border-radius: 28px;    
-    background-image: linear-gradient( 
-        105deg
-        , #743e79, #fcf4f8);
+     border-radius: 28px;  
         height: 271px;
+        box-shadow: 1px 0px 18px 0px #808080;
  }
  section:hover
  {
-    box-shadow: 1px 20px 9px 0px #612d6d;
+    box-shadow: 1px 20px 9px 0px #808080;
  }
  section div{
      display: flex;
@@ -44,30 +33,26 @@
 
  }
  section div a{
-    align-self: center;
-
-    background-image: linear-gradient( to right, #e93601,#f6d00a);
-    box-shadow: 0px 6px 11px 0px #3d0e59;
-    color: white;
-  
+    align-self: center;    
+    box-shadow: 0px 6px 11px 0px #90003b;
+    color: white;  
     font-size: 1.1rem;
     font-weight: bolder;
     border-radius: 17px;
     border: 0;
     outline: 0;
     padding: 4% 11%;
-    
+    background-color: #930841;
     margin: 0;
     text-decoration: none;
-    /* transition:  box-shadow 2s ease-out 100ms; */
 
  }
 
  section div a:hover{
-    box-shadow: 0px 0px 11px 0px #3d0e59;
+    box-shadow: 0px 0px 11px 0px #930841;
  }
  section div a:active{
-    box-shadow: 0px 0px 1px 0px #3d0e59;
+    box-shadow: 0px 0px 1px 0px #808080;
  }
 
  
@@ -76,6 +61,8 @@
     margin: 11px;
     letter-spacing: 1px;
     word-spacing: 1px;
+    color: #90003b;
+    font-size: 25px;
  }
  section img{
      display: block;

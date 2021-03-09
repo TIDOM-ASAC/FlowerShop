@@ -1,3 +1,4 @@
+{
   "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaVersion": 6,
@@ -38,4 +39,3 @@
     // "strict": [2, "global"]
   }
 }
-
